@@ -1,10 +1,11 @@
 import { Module } from '@nestjs/common';
 import { AppController } from './app.controller';
-import { AppService } from './app.service';
+
+import { XionModule } from './xion/xion.module';
+
 
 @Module({
-  imports: [],
+  imports: [XionModule],
   controllers: [AppController],
-  providers: [AppService],
 })
 export class AppModule {}
