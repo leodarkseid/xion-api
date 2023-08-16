@@ -25,7 +25,7 @@ const router = new ethers.Contract(
     provider
 )
 
-const call price = async () =>{
+const call_price = async () =>{
     const amounts = await router.getAmountsOut(amountIn, path);
     const price = formatUnits(amounts[1].toString(), 6)
     console.log('price', price)
