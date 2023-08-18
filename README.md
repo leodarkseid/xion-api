@@ -4,9 +4,9 @@ Xion XGT token APIs
 
 ## Development
 
-*clone repo
-*npm install
-*npm run start:dev
+clone repo  
+`npm install`  
+`npm run start:dev`  
 
 ## Methods
 
