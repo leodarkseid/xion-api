@@ -26,7 +26,8 @@ clone repo
 
 `../xion/xgt/price`
 
-
 ### To Check the price of any token in respect to another
 
 `../xion/xgt/price/:token/:stable`
+
+Note:If the either of the pair does not exist or the Router an Error 500 will be returned

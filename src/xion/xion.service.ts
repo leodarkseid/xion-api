@@ -15,6 +15,7 @@ export class XionService {
   async getPrice() {
     return { polygon: await price() };
   }
+
   async getDynamicPrice(token: string, stable: string) {
     return { polygon: await dynamicPrice(token, stable) };
   }
