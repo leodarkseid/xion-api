@@ -46,3 +46,10 @@ export async function price() {
   const formattedPrice = parseFloat(price).toFixed(6);
   return formattedPrice;
 }
+export async function dynamicPrice(token: string, stable: string ) {
+  const dynamicPath = [token, stable];
+  const amounts = await router.getAmountsOut(amountIn, dynamicPath);
+  const price = formatUnits(amounts[1].toString(), 6);
+  const formattedPrice = parseFloat(price).toFixed(6);
+  return formattedPrice;
+}
